@@ -1,0 +1,40 @@
+{{$markdownFile := include max.md}}
+
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Max</title>
+		<meta property="og:title" content="Max">
+		<meta property="og:type" content="website">
+		<meta property="og:description" content="Your stop for MAXIMUM hole pictures online.">
+		<meta property="og:url" content="https://max.hole.pictures">
+
+		<meta name="twitter:title" content="Max">
+		<meta name="twitter:site" content="@lieutenantbam">
+		<meta name="twitter:creator" content="@lieutenantbam">
+		<meta name="twitter:description" content="Your stop for MAXIMUM hole pictures online.">
+		<meta name="twitter:image" content="/static/comic.png">
+		<meta name="twitter:image:alt" content="Comic featuring Hebrew Magic and Max. Hebrew Magic > 'God damn and fuck you, child.' Max > 'Wow!'">
+
+		<link rel="stylesheet" href="/static/bulma.min.css">
+
+		<link rel="apple-touch-icon" sizes="180x180" href="/static/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="/static/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/static/favicon-16x16.png">
+		<link rel="manifest" href="/static/site.webmanifest">
+		<link rel="mask-icon" href="/static/safari-pinned-tab.svg" color="#5bbad5">
+		<link rel="shortcut icon" href="/static/favicon.ico">
+		<meta name="msapplication-TileColor" content="#da532c">
+		<meta name="msapplication-config" content="/static/browserconfig.xml">
+		<meta name="theme-color" content="#ffffff">
+	</head>
+	<body>
+		<div class="hero is-fullheight">
+			<div class="hero-body">
+				<div class="container has-text-centered">
+					{{markdown $markdownFile.Body}}
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
